@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "N3VWMDgDUpAkOcBHHJ5skTQ6ChsrLwZqLCTEkuy8uIs=",
+  "Source": "HomeSwap.API",
+  "BasePath": "_content/HomeSwap.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
