@@ -9,7 +9,7 @@ namespace HomeSwap.Common.DTOs
     public class ApartmentPicturesDTO
     {
         public int Id { get; set; }
-        public int apartmentId { get; set; }
+        public int ApartmentId { get; set; }
         public string Picture { get; set; } = "";
     }
 }

@@ -1,15 +1,27 @@
 {
   "version": 2,
-  "dgSpecHash": "ChVoypGwPKVPUAtoQRORx2K5w19UfBHDTqnD8pQmgFJrAgTFfMpAmcif7J+e74vubrU1lqsNKCuTIuF20KqweQ==",
-  "success": true,
-  "projectFilePath": "Y:\\Groups\\3\\הורביץ אפרת\\Project HomeSwap\\HomeSwap-main\\HomeSwap.API\\HomeSwap.API.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\hitmachut\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
-    "C:\\Users\\hitmachut\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
-    "C:\\Users\\hitmachut\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
-    "C:\\Users\\hitmachut\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
-    "C:\\Users\\hitmachut\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
-    "C:\\Users\\hitmachut\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
-  ],
-  "logs": []
+  "dgSpecHash": "0UmgayQFPlD8EszDFFAWvbRUFjAcPDZHbR3xW8kHpJ6vASKRVVBbfNGSK8fOE7Xbw7VbVRtEXT3PRF5OQ5UXFw==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\user\\Desktop\\Project HomeSwap\\HomeSwap-main\\HomeSwap.API\\HomeSwap.API.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project HomeSwap.Services is not compatible with net6.0 (.NETCoreApp,Version=v6.0). Project HomeSwap.Services supports: net7.0 (.NETCoreApp,Version=v7.0)",
+      "libraryId": "HomeSwap.Services",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project HomeSwap.Common is not compatible with net6.0 (.NETCoreApp,Version=v6.0). Project HomeSwap.Common supports: net7.0 (.NETCoreApp,Version=v7.0)",
+      "libraryId": "HomeSwap.Common",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

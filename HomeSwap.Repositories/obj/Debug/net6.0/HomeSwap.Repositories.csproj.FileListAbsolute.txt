@@ -13,3 +13,8 @@ Y:\Groups\3\הורביץ אפרת\Project HomeSwap\HomeSwap-main\HomeSwap.Reposi
 Y:\Groups\3\הורביץ אפרת\Project HomeSwap\HomeSwap-main\HomeSwap.Repositories\obj\Debug\net6.0\HomeSwap.Repositories.AssemblyInfoInputs.cache
 Y:\Groups\3\הורביץ אפרת\Project HomeSwap\HomeSwap-main\HomeSwap.Repositories\obj\Debug\net6.0\HomeSwap.Repositories.AssemblyInfo.cs
 Y:\Groups\3\הורביץ אפרת\Project HomeSwap\HomeSwap-main\HomeSwap.Repositories\obj\Debug\net6.0\HomeSwap.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Project HomeSwap\HomeSwap-main\HomeSwap.Repositories\obj\Debug\net6.0\HomeSwap.Repositories.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Project HomeSwap\HomeSwap-main\HomeSwap.Repositories\obj\Debug\net6.0\HomeSwap.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\Project HomeSwap\HomeSwap-main\HomeSwap.Repositories\obj\Debug\net6.0\HomeSwap.Repositories.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Project HomeSwap\HomeSwap-main\HomeSwap.Repositories\obj\Debug\net6.0\HomeSwap.Repositories.AssemblyInfo.cs
+C:\Users\user\Desktop\Project HomeSwap\HomeSwap-main\HomeSwap.Repositories\obj\Debug\net6.0\HomeSwap.Repositories.csproj.CoreCompileInputs.cache

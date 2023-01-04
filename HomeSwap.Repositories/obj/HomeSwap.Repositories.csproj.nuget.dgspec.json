@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "Y:\\Groups\\3\\הורביץ אפרת\\Project HomeSwap\\HomeSwap-main\\HomeSwap.Repositories\\HomeSwap.Repositories.csproj": {}
+    "C:\\Users\\user\\Desktop\\Project HomeSwap\\HomeSwap-main\\HomeSwap.Repositories\\HomeSwap.Repositories.csproj": {}
   },
   "projects": {
-    "Y:\\Groups\\3\\הורביץ אפרת\\Project HomeSwap\\HomeSwap-main\\HomeSwap.Repositories\\HomeSwap.Repositories.csproj": {
+    "C:\\Users\\user\\Desktop\\Project HomeSwap\\HomeSwap-main\\HomeSwap.Repositories\\HomeSwap.Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Y:\\Groups\\3\\הורביץ אפרת\\Project HomeSwap\\HomeSwap-main\\HomeSwap.Repositories\\HomeSwap.Repositories.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\Project HomeSwap\\HomeSwap-main\\HomeSwap.Repositories\\HomeSwap.Repositories.csproj",
         "projectName": "HomeSwap.Repositories",
-        "projectPath": "Y:\\Groups\\3\\הורביץ אפרת\\Project HomeSwap\\HomeSwap-main\\HomeSwap.Repositories\\HomeSwap.Repositories.csproj",
-        "packagesPath": "C:\\Users\\hitmachut\\.nuget\\packages\\",
-        "outputPath": "Y:\\Groups\\3\\הורביץ אפרת\\Project HomeSwap\\HomeSwap-main\\HomeSwap.Repositories\\obj\\",
+        "projectPath": "C:\\Users\\user\\Desktop\\Project HomeSwap\\HomeSwap-main\\HomeSwap.Repositories\\HomeSwap.Repositories.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\Project HomeSwap\\HomeSwap-main\\HomeSwap.Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\hitmachut\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -47,7 +46,7 @@
           "dependencies": {
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.1.1, )"
             }
           },
           "imports": [
@@ -66,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
