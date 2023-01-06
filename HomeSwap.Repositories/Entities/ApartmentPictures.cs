@@ -8,6 +8,13 @@ namespace HomeSwap.Repositories.Entities
 {
     public  class ApartmentPictures
     {
+        public ApartmentPictures(int id, int apartmentId, string picture)
+        {
+            Id = id;
+            this.apartmentId = apartmentId;
+            Picture = picture;
+        }
+
         public int Id { get; set; }
         public int apartmentId { get; set; }
         public string Picture { get; set; }

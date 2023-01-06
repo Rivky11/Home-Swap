@@ -22,9 +22,9 @@ namespace HomeSwap.Services
             services.AddScoped<IApartmentService, ApartmentService>();
             services.AddScoped<IApartmentRatingService, ApartmentRatingService>();
             services.AddScoped<IApartmentPicturesService, ApartmentPicturesService>();
-
             services.AddAutoMapper(typeof(MappingProfile));
-
+            services.AddDbContext<MyDbContext>();
+            services.AddDbContext<IContext, MyDbContext>();
             return services;
         }
     }

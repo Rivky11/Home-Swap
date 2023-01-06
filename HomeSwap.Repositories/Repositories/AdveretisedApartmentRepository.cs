@@ -2,6 +2,7 @@
 using HomeSwap.Repositories.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,8 +25,6 @@ namespace HomeSwap.Repositories.Repositories
             await _context.SaveChangesAsync();
             return adveretisedApartment;
         }
-
-
         public async Task DeleteAsync(int id)
         {
             _context.AdveretisedApartments.Remove(GetById(id));
@@ -33,10 +32,9 @@ namespace HomeSwap.Repositories.Repositories
         }
 
 
-
         public Task<List<AdveretisedApartment>> GetAllAsync()
         {
-            return _context.AdveretisedApartments.ToListAsync();
+            return  _context.AdveretisedApartments.ToListAsync();
         }
 
         public AdveretisedApartment GetById(int id)
@@ -50,10 +48,14 @@ namespace HomeSwap.Repositories.Repositories
         }
 
   
-        public async Task<AdveretisedApartment> UpdateAsync(AdveretisedApartment adveretisedApartment)
+        public async Task<AdveretisedApartment> UpdateAsync(AdveretisedApartment toUpdate)
         {
-            var AdveretisedApartments = _context.AdveretisedApartments.Update(adveretisedApartment);
-            await _context.SaveChangesAsync(AdveretisedApartments);
+            var adveretisedApartment = GetById(toUpdate.Id);
+            adveretisedApartment.ApartmentId = toUpdate.ApartmentId;
+            adveretisedApartment.FromDate = toUpdate.FromDate;   
+            adveretisedApartment.ToDate = toUpdate.ToDate;
+            adveretisedApartment.Status = toUpdate.Status;  
+            await _context.SaveChangesAsync();
             return adveretisedApartment;
         }
     }

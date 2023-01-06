@@ -18,3 +18,8 @@ C:\Users\user\Desktop\Project HomeSwap\HomeSwap-main\HomeSwap.Repositories\obj\D
 C:\Users\user\Desktop\Project HomeSwap\HomeSwap-main\HomeSwap.Repositories\obj\Debug\net6.0\HomeSwap.Repositories.AssemblyInfoInputs.cache
 C:\Users\user\Desktop\Project HomeSwap\HomeSwap-main\HomeSwap.Repositories\obj\Debug\net6.0\HomeSwap.Repositories.AssemblyInfo.cs
 C:\Users\user\Desktop\Project HomeSwap\HomeSwap-main\HomeSwap.Repositories\obj\Debug\net6.0\HomeSwap.Repositories.csproj.CoreCompileInputs.cache
+Y:\Groups\3\קרליץ רבקה בתיה\Project HomeSwap\HomeSwap-main\HomeSwap.Repositories\obj\Debug\net6.0\HomeSwap.Repositories.csproj.AssemblyReference.cache
+Y:\Groups\3\קרליץ רבקה בתיה\Project HomeSwap\HomeSwap-main\HomeSwap.Repositories\obj\Debug\net6.0\HomeSwap.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+Y:\Groups\3\קרליץ רבקה בתיה\Project HomeSwap\HomeSwap-main\HomeSwap.Repositories\obj\Debug\net6.0\HomeSwap.Repositories.AssemblyInfoInputs.cache
+Y:\Groups\3\קרליץ רבקה בתיה\Project HomeSwap\HomeSwap-main\HomeSwap.Repositories\obj\Debug\net6.0\HomeSwap.Repositories.AssemblyInfo.cs
+Y:\Groups\3\קרליץ רבקה בתיה\Project HomeSwap\HomeSwap-main\HomeSwap.Repositories\obj\Debug\net6.0\HomeSwap.Repositories.csproj.CoreCompileInputs.cache

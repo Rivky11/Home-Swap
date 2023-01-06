@@ -13,17 +13,17 @@ namespace HomeSwap.Repositories.Entities
             Id = id;
             ApartmentId = apartmentId;
             DateAdd = dateAdd;
-            this.fromDate = fromDate;
-            this.toDate = toDate;
-            this.status = status;
+            this.FromDate = fromDate;
+            this.ToDate = toDate;
+            this.Status = status;
         }
 
         public int Id { get; set; }
         public int ApartmentId { get; set; }
         public DateTime DateAdd { get; set; }
-        public DateTime fromDate { get; set; }
-        public DateTime toDate { get; set; }
-        public bool status { get; set; }
+        public DateTime FromDate { get; set; }
+        public DateTime ToDate { get; set; }
+        public bool Status { get; set; }
         
 
     }

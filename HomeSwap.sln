@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeSwap.Services", "HomeSw
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeSwap.Common", "HomeSwap.Common\HomeSwap.Common.csproj", "{45DE19B3-1209-4DEE-95BB-D7AFFC61962D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeSwap.API", "HomeSwap.API\HomeSwap.API.csproj", "{3FF6B7A5-5F7B-4960-8F8D-4F3B375121A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeSwap.API", "HomeSwap.API\HomeSwap.API.csproj", "{3FF6B7A5-5F7B-4960-8F8D-4F3B375121A1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeSwap.Context", "HomeSwap.DbContext\HomeSwap.Context.csproj", "{B2828BCC-E3C0-4F6A-BD42-7970CC68C581}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{3FF6B7A5-5F7B-4960-8F8D-4F3B375121A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FF6B7A5-5F7B-4960-8F8D-4F3B375121A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FF6B7A5-5F7B-4960-8F8D-4F3B375121A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2828BCC-E3C0-4F6A-BD42-7970CC68C581}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2828BCC-E3C0-4F6A-BD42-7970CC68C581}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2828BCC-E3C0-4F6A-BD42-7970CC68C581}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2828BCC-E3C0-4F6A-BD42-7970CC68C581}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
