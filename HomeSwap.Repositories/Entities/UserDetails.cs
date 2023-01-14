@@ -20,7 +20,7 @@ namespace HomeSwap.Repositories.Entities
 
     public  class UserDetails
     {
-        public int userId { get; set; }
+        public int UserId { get; set; }
         public EMigzar Migzar { get; set; }
         public EType Type { get; set; }
         public bool Status { get; set; }

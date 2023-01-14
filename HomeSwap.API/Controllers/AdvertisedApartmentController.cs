@@ -1,38 +1,41 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using HomeSwap.Services.Interfaces;
+using HomeSwap.Common.DTOs;
+using HomeSwap.Services.Services;
+
 namespace HomeSwap.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AdvertisedApartmentController : ControllerBase
+    public class AdveretisedApartmentController : ControllerBase
     {
-        private readonly IAdvertisedApartmentService _advertisedApartmentService;
-        public AdvertisedApartmentController(IAdvertisedApartmentService advertisedApartmentService)
+        private readonly IAdveretisedApartmentService _adveretisedApartmentService;
+        public AdveretisedApartmentController(IAdveretisedApartmentService adveretisedApartmentService)
         {
-            _advertisedApartmentService = advertisedApartmentService;
+            _adveretisedApartmentService = adveretisedApartmentService;
         }
 
         [HttpGet]
-        public async Task<List<AdvertisedApartmentDTO>> GetAll()
+        public async Task<List<AdveretisedApartmentDTO>> GetAll()
         {
-            return await _advertisedApartmentService.GetAllAsync();
+            return await _adveretisedApartmentService.GetAllAsync();
         }
 
         [HttpGet("{id}")]
-        public async Task<AdvertisedApartmentDTO> GetById(int id)
+        public async Task<AdveretisedApartmentDTO> GetById(int id)
         {
-            return await _advertisedApartmentService.GetAdvertisedApartmentByIdAsync(id);
+            return await _adveretisedApartmentService.GetByIdAsync(id);
         }
 
         [HttpPost]
-        public async Task<ActionResult<AdvertisedApartmentDTO>> Post([FromBody] AdvertisedApartmentPostModel model)
+        public async Task<ActionResult<AdveretisedApartmentDTO>> Post([FromBody] AdveretisedApartmentPostModel model)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest();
             }
-            return await _advertisedApartmentService.AddAsync(new AdvertisedApartmentDTO
+            return await _adveretisedApartmentService.AddAsync(new AdveretisedApartmentDTO
             {
                 Id = model.id,
                 ApartmentId = model.ApartmentId,
@@ -45,13 +48,13 @@ namespace HomeSwap.API.Controllers
 
 
         [HttpPut("{id}")]
-        public async Task<ActionResult<AdvertisedApartmentDTO>> Put(int id, [FromBody] AdvertisedApartmentPostModel model)
+        public async Task<ActionResult<AdveretisedApartmentDTO>> Put(int id, [FromBody] AdveretisedApartmentPostModel model)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest();
             }
-            return await _advertisedApartmentService.UpdateAsync(new AdvertisedApartmentDTO
+            return await _adveretisedApartmentService.UpdateAsync(new AdveretisedApartmentDTO
             {
                 Id = id,
                 ApartmentId = model.ApartmentId,
@@ -65,7 +68,7 @@ namespace HomeSwap.API.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(int id)
         {
-            await _advertisedApartmentService.DeleteAsync(id);
+            await _adveretisedApartmentService.DeleteAsync(id);
             return NoContent();
         }
     }

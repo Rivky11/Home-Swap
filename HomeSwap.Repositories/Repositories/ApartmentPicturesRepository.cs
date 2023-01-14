@@ -22,7 +22,7 @@ namespace HomeSwap.Repositories.Repositories
         public async Task<ApartmentPictures> AddAsync(int id, int apartmentId, string picture)
         {
             ApartmentPictures apartmentPictures = new ApartmentPictures(id, apartmentId, picture);
-            _context.ApartmentsPictures.Add(apartmentPictures);
+            _context.ApartmentPictures.Add(apartmentPictures);
             await _context.SaveChangesAsync();
             return apartmentPictures;
         }
@@ -30,7 +30,7 @@ namespace HomeSwap.Repositories.Repositories
 
         public async Task DeleteAsync(int id)
         {
-            _context.ApartmentsPictures.Remove(GetById(id));
+            _context.ApartmentPictures.Remove(GetById(id));
             await _context.SaveChangesAsync();
         }
 
@@ -38,22 +38,28 @@ namespace HomeSwap.Repositories.Repositories
 
         public Task<List<ApartmentPictures>> GetAllAsync()
         {
-            return _context.ApartmentsPictures.ToListAsync();
+            return _context.ApartmentPictures.ToListAsync();
         }
 
         public ApartmentPictures GetById(int id)
         {
-            return _context.ApartmentsPictures.First(item => item.Id == id);
+            return _context.ApartmentPictures.First(item => item.Id == id);
         }
 
         public async Task<ApartmentPictures> GetByIdAsync(int id)
         {
-            return await _context.ApartmentsPictures.FindAsync(id);
+            return await _context.ApartmentPictures.FindAsync(id);
         }
 
 
-        public async Task<ApartmentPictures> UpdateAsync(ApartmentPictures apartmentPictures)
+        public async Task<ApartmentPictures> UpdateAsync(ApartmentPictures toUpdate)
         {
+            var apartmentPictures = GetById(toUpdate.Id);
+            apartmentPictures.ApartmentId = toUpdate.ApartmentId;
+            apartmentPictures.Picture = toUpdate.Picture;
+            await _context.SaveChangesAsync();
+            return apartmentPictures;
+
         }
     }
 }

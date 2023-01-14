@@ -11,12 +11,12 @@ namespace HomeSwap.Repositories.Entities
         public ApartmentPictures(int id, int apartmentId, string picture)
         {
             Id = id;
-            this.apartmentId = apartmentId;
+            ApartmentId = apartmentId;
             Picture = picture;
         }
 
         public int Id { get; set; }
-        public int apartmentId { get; set; }
+        public int ApartmentId { get; set; }
         public string Picture { get; set; }
 
 
