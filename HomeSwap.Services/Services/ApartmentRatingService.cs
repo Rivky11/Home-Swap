@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using HomeSwap.Common.DTOs;
 using HomeSwap.Repositories.Entities;
 using HomeSwap.Repositories.Interfaces;
 using HomeSwap.Services.Interfaces;
@@ -22,7 +23,7 @@ namespace HomeSwap.Services.Services
             _mapper = mapper;
         }
 
-        public Task<ApartmentPictures> AddAsync(int id, int guessId, int apartmentId, int clean, string discreption)
+        public Task<ApartmentPicturesDTO> AddAsync(int id, int guessId, int apartmentId, int clean, string discreption)
         {
             throw new NotImplementedException();
         }
@@ -32,17 +33,17 @@ namespace HomeSwap.Services.Services
             throw new NotImplementedException();
         }
 
-        public Task<List<ApartmentPictures>> GetAllAsync()
+        public Task<List<ApartmentPicturesDTO>> GetAllAsync()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ApartmentPictures> GetByIdAsync(int id)
+        public Task<ApartmentPicturesDTO> GetByIdAsync(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<ApartmentPictures> UpdateAsync(ApartmentPictures apartmentPictures)
+        public Task<ApartmentPicturesDTO> UpdateAsync(ApartmentPicturesDTO apartmentPictures)
         {
             throw new NotImplementedException();
         }

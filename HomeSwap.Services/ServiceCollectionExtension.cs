@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
+using HomeeSwap.Context;
 using HomeSwap.Repositories;
+using HomeSwap.Repositories.Interfaces;
 using HomeSwap.Services.Interfaces;
 using HomeSwap.Services.Services;
 using Microsoft.Extensions.DependencyInjection;
@@ -23,8 +25,8 @@ namespace HomeSwap.Services
             services.AddScoped<IApartmentRatingService, ApartmentRatingService>();
             services.AddScoped<IApartmentPicturesService, ApartmentPicturesService>();
             services.AddAutoMapper(typeof(MappingProfile));
-            services.AddDbContext<MyDbContext>();
-            services.AddDbContext<IContext, MyDbContext>();
+            services.AddDbContext<DataContext>();
+            services.AddDbContext<IContext, DataContext>();
             return services;
         }
     }

@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using HomeSwap.Repositories.Entities;
+using HomeSwap.Common.DTOs;
 using HomeSwap.Repositories.Interfaces;
 using HomeSwap.Services.Interfaces;
 using System;
@@ -21,7 +21,7 @@ namespace HomeSwap.Services.Services
             _mapper = mapper;
         }
 
-        public Task<Apartment> AddAsync(int id, int userId, string city, string adress, int numBeds, int numRooms, int area, int floor, bool isConditioned, bool isMMD, bool isAccessForDisabled, bool isElevator, bool isKosherKitchen, bool isRenovated, bool isBars, bool isForSleepingOnly)
+        public Task<ApartmentDTO> AddAsync(int id, int userId, string city, string adress, int numBeds, int numRooms, int area, int floor, bool isConditioned, bool isMMD, bool isAccessForDisabled, bool isElevator, bool isKosherKitchen, bool isRenovated, bool isBars, bool isForSleepingOnly)
         {
             throw new NotImplementedException();
         }
@@ -31,17 +31,17 @@ namespace HomeSwap.Services.Services
             throw new NotImplementedException();
         }
 
-        public Task<List<Apartment>> GetAllAsync()
+        public Task<List<ApartmentDTO>> GetAllAsync()
         {
             throw new NotImplementedException();
         }
 
-        public Task<Apartment> GetByIdAsync(int id)
+        public Task<ApartmentDTO> GetByIdAsync(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<Apartment> UpdateAsync(Apartment apartment)
+        public Task<ApartmentDTO> UpdateAsync(ApartmentDTO apartment)
         {
             throw new NotImplementedException();
         }

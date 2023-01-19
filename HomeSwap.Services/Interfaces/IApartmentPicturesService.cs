@@ -1,4 +1,4 @@
-﻿using HomeSwap.Repositories.Entities;
+﻿using HomeSwap.Common.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +9,10 @@ namespace HomeSwap.Services.Interfaces
 {
     public interface IApartmentPicturesService
     {
-        public Task<List<ApartmentPictures>> GetAllAsync();
-        public Task<ApartmentPictures> GetByIdAsync(int id);
-        public Task<ApartmentPictures> AddAsync(int id, int apartmentId, string picture);
-        public Task<ApartmentPictures> UpdateAsync(ApartmentPictures apartmentPictures);
+        public Task<List<ApartmentPicturesDTO>> GetAllAsync();
+        public Task<ApartmentPicturesDTO> AddAsync(int id, int apartmentId, string picture);
+        public Task<ApartmentPicturesDTO> UpdateAsync(ApartmentPicturesDTO apartmentPictures);
         public Task DeleteAsync(int id);
+        Task<ApartmentPicturesDTO> GetByIdAsync(int id);
     }
 }

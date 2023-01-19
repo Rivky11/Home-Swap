@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using HomeSwap.Repositories.Entities;
+using HomeSwap.Common.DTOs;
 using HomeSwap.Repositories.Interfaces;
 using HomeSwap.Services.Interfaces;
 using System;
@@ -20,7 +20,7 @@ namespace HomeSwap.Services.Services
             _userRepository = userRepository;
             _mapper = mapper;
         }
-        public Task<User> AddAsync(int id, int password, string firstName, string lastName, string phone, string mail, int role)
+        public Task<UserDTO> AddAsync(int id, int password, string firstName, string lastName, string phone, string mail, int role)
         {
             throw new NotImplementedException();
         }
@@ -30,17 +30,17 @@ namespace HomeSwap.Services.Services
             throw new NotImplementedException();
         }
 
-        public Task<List<User>> GetAllAsync()
+        public Task<List<UserDTO>> GetAllAsync()
         {
             throw new NotImplementedException();
         }
 
-        public Task<User> GetByIdAsync(int id)
+        public Task<UserDTO> GetByIdAsync(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<User> UpdateAsync(User user)
+        public Task<UserDTO> UpdateAsync(UserDTO user)
         {
             throw new NotImplementedException();
         }

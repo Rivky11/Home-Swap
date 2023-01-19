@@ -7,7 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\HomeSwap.Common\HomeSwap.Common.csproj" />
+    <ProjectReference Include="..\HomeSwap.Context\HomeSwap.Context.csproj" />
     <ProjectReference Include="..\HomeSwap.Repositories\HomeSwap.Repositories.csproj" />
   </ItemGroup>
 

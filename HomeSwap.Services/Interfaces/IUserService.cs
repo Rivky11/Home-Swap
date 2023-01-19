@@ -1,4 +1,4 @@
-﻿using HomeSwap.Repositories.Entities;
+﻿using HomeSwap.Common.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +9,12 @@ namespace HomeSwap.Services.Interfaces
 {
     public interface IUserService
     {
-        public Task<List<User>> GetAllAsync();
-        public Task<User> GetByIdAsync(int id);
-        public Task<User> AddAsync(int id, int password, string firstName, string lastName, string phone, string mail, int role);
-        public Task<User> UpdateAsync(User user);
+        public Task<List<UserDTO>> GetAllAsync();
+        public Task<UserDTO> GetByIdAsync(int id);
+        public Task<UserDTO> AddAsync(int id, int password, string firstName, string lastName, string phone, string mail, int role);
+        public Task<UserDTO> UpdateAsync(UserDTO user);
         public Task Deleteasync(int id);
+        Task<UserDTO> GetUserByIdAsync(int id);
+        Task DeleteAsync(int id);
     }
 }

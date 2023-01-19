@@ -22,9 +22,9 @@ namespace HomeSwap.Services.Services
             _adveretisedApartmentRepository = adveretisedApartmentRepository;
             _mapper = mapper;
         }
-        public async Task<AdveretisedApartment> AddAsync(int id, int apartmentId, DateTime dateAdd, DateTime fromDate, DateTime toDate, bool status)
+        public async Task<AdveretisedApartmentDTO> AddAsync(int id, int apartmentId, DateTime dateAdd, DateTime fromDate, DateTime toDate, bool status)
         {
-            return _mapper.Map<AdveretisedApartmentDTO>(await _adveretisedApartmentRepository.AddAsync(id, apartmentId, dateAdd, fromDate, toDate,status));
+            return _mapper.Map<AdveretisedApartmentDTO>(await _adveretisedApartmentRepository.AddAsync(id, apartmentId, dateAdd, fromDate, toDate, status));
         }
 
         public async Task DeleteAsync(int id)
@@ -32,20 +32,20 @@ namespace HomeSwap.Services.Services
             await _adveretisedApartmentRepository.DeleteAsync(id);
         }
 
-        public async Task<List<AdveretisedApartment>> GetAllAsync()
+        public async Task<List<AdveretisedApartmentDTO>> GetAllAsync()
         {
            return  _mapper.Map<List<AdveretisedApartmentDTO>>(await _adveretisedApartmentRepository.GetAllAsync());
 
         }
 
-        public async Task<AdveretisedApartment> GetByIdAsync(int id)
+        public async Task<AdveretisedApartmentDTO> GetByIdAsync(int id)
         {
             return _mapper.Map<AdveretisedApartmentDTO>(await _adveretisedApartmentRepository.GetByIdAsync(id));
         }
 
-        public async Task<AdveretisedApartment> UpdateAsync(AdveretisedApartment adveretisedApartment)
+        public async Task<AdveretisedApartmentDTO> UpdateAsync(AdveretisedApartmentDTO adveretisedApartment)
         {
-            return _mapper.Map<AdveretisedApartmentDTO>(await _adveretisedApartmentRepository.UpdateAsync(adveretisedApartment));
+            return _mapper.Map<AdveretisedApartmentDTO>(await _adveretisedApartmentRepository.UpdateAsync(_mapper.Map<AdveretisedApartment>(adveretisedApartment)));
         }
     }
 }

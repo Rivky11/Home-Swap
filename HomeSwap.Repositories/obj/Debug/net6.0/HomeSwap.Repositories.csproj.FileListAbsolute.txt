@@ -37,3 +37,17 @@ C:\Users\user\Desktop\Project HomeSwap\new\Home-Swap\HomeSwap.Repositories\obj\D
 C:\Users\user\Desktop\Project HomeSwap\new\Home-Swap\HomeSwap.Repositories\obj\Debug\net6.0\HomeSwap.Repositories.pdb
 C:\Users\user\Desktop\Project HomeSwap\new\Home-Swap\HomeSwap.Repositories\obj\Debug\net6.0\HomeSwap.Repositories.genruntimeconfig.cache
 C:\Users\user\Desktop\Project HomeSwap\new\Home-Swap\HomeSwap.Repositories\obj\Debug\net6.0\ref\HomeSwap.Repositories.dll
+Y:\Groups\3\קרליץ רבקה בתיה\19.1\Home-Swap\HomeSwap.Repositories\bin\Debug\net6.0\HomeSwap.Repositories.deps.json
+Y:\Groups\3\קרליץ רבקה בתיה\19.1\Home-Swap\HomeSwap.Repositories\bin\Debug\net6.0\HomeSwap.Repositories.runtimeconfig.json
+Y:\Groups\3\קרליץ רבקה בתיה\19.1\Home-Swap\HomeSwap.Repositories\bin\Debug\net6.0\HomeSwap.Repositories.dll
+Y:\Groups\3\קרליץ רבקה בתיה\19.1\Home-Swap\HomeSwap.Repositories\bin\Debug\net6.0\HomeSwap.Repositories.pdb
+Y:\Groups\3\קרליץ רבקה בתיה\19.1\Home-Swap\HomeSwap.Repositories\obj\Debug\net6.0\HomeSwap.Repositories.csproj.AssemblyReference.cache
+Y:\Groups\3\קרליץ רבקה בתיה\19.1\Home-Swap\HomeSwap.Repositories\obj\Debug\net6.0\HomeSwap.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+Y:\Groups\3\קרליץ רבקה בתיה\19.1\Home-Swap\HomeSwap.Repositories\obj\Debug\net6.0\HomeSwap.Repositories.AssemblyInfoInputs.cache
+Y:\Groups\3\קרליץ רבקה בתיה\19.1\Home-Swap\HomeSwap.Repositories\obj\Debug\net6.0\HomeSwap.Repositories.AssemblyInfo.cs
+Y:\Groups\3\קרליץ רבקה בתיה\19.1\Home-Swap\HomeSwap.Repositories\obj\Debug\net6.0\HomeSwap.Repositories.csproj.CoreCompileInputs.cache
+Y:\Groups\3\קרליץ רבקה בתיה\19.1\Home-Swap\HomeSwap.Repositories\obj\Debug\net6.0\HomeSwap.Repositories.dll
+Y:\Groups\3\קרליץ רבקה בתיה\19.1\Home-Swap\HomeSwap.Repositories\obj\Debug\net6.0\refint\HomeSwap.Repositories.dll
+Y:\Groups\3\קרליץ רבקה בתיה\19.1\Home-Swap\HomeSwap.Repositories\obj\Debug\net6.0\HomeSwap.Repositories.pdb
+Y:\Groups\3\קרליץ רבקה בתיה\19.1\Home-Swap\HomeSwap.Repositories\obj\Debug\net6.0\HomeSwap.Repositories.genruntimeconfig.cache
+Y:\Groups\3\קרליץ רבקה בתיה\19.1\Home-Swap\HomeSwap.Repositories\obj\Debug\net6.0\ref\HomeSwap.Repositories.dll

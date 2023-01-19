@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using HomeSwap.Common.DTOs;
+using HomeSwap.Services.Interfaces;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HomeSwap.API.Controllers
@@ -22,7 +24,7 @@ namespace HomeSwap.API.Controllers
         [HttpGet("{id}")]
         public async Task<ApartmentRatingDTO> GetById(int id)
         {
-            return await _apartmentRatingService.GetApartmentRatingByIdAsync(id);
+            return await _apartmentRatingService.GetByIdAsync(id);
         }
 
         [HttpPost]

@@ -1,4 +1,5 @@
-﻿using HomeSwap.Common.DTOs;
+﻿using AutoMapper;
+using HomeSwap.Common.DTOs;
 using HomeSwap.Repositories.Entities;
 using System;
 using System.Collections.Generic;
@@ -11,15 +12,17 @@ using System.Threading.Tasks;
 
 namespace HomeSwap.Services
 {
-    public class MappingProfile
+    public class MappingProfile:Profile
     {
         public MappingProfile() {
-            CreateMap<UserDTO, User>().ForMember(dest => dest.Description, opt => opt.MapFrom(src => src.Title)).ReverseMap();
-            CreateMap<UserDetailsDTO, UserDetails>().ForMember(dest => dest.Description, opt => opt.MapFrom(src => src.Title)).ReverseMap();
-            CreateMap<ApartmentDTO, Apartment>().ForMember(dest => dest.Description, opt => opt.MapFrom(src => src.Title)).ReverseMap();
-            CreateMap<ApartmentRatingDTO, ApartmentRating>().ForMember(dest => dest.Description, opt => opt.MapFrom(src => src.Title)).ReverseMap();
-            CreateMap<ApartmentPicturesDTO, ApartmentPictures>().ForMember(dest => dest.Description, opt => opt.MapFrom(src => src.Title)).ReverseMap();
-            CreateMap<AdveretisedApartmentDTO, AdveretisedApartment>().ForMember(dest => dest.Description, opt => opt.MapFrom(src => src.Title)).ReverseMap();
+            CreateMap<UserDTO, User>().ReverseMap();
+            CreateMap<UserDetailsDTO, UserDetails>().ReverseMap();
+            CreateMap<ApartmentDTO, Apartment>().ReverseMap();
+            CreateMap<ApartmentRatingDTO, ApartmentRating>().ReverseMap();
+            CreateMap<ApartmentPicturesDTO, ApartmentPictures>().ReverseMap();
+            CreateMap<AdveretisedApartmentDTO, AdveretisedApartment>().ReverseMap();
         }
+
+     
     }
 }
