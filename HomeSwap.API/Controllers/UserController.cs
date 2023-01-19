@@ -1,4 +1,5 @@
-﻿using HomeSwap.Common.DTOs;
+﻿using HomeSwap.API.Models;
+using HomeSwap.Common.DTOs;
 using HomeSwap.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -28,7 +29,7 @@ namespace HomeSwap.API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<UserDTO>> Post([FromBody] UserPostModel model)
+        public async Task<ActionResult<UserDTO>> Post([FromBody] UserModel model)
         {
             if (!ModelState.IsValid)
             {

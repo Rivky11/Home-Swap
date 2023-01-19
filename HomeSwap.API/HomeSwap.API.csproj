@@ -15,10 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\HomeSwap.Common\HomeSwap.Common.csproj" />
     <ProjectReference Include="..\HomeSwap.Services\HomeSwap.Services.csproj" />
   </ItemGroup>
